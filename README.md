@@ -6,7 +6,7 @@ The site uses plain HTML, CSS, JavaScript, and publication PDFs. GitHub Pages pu
 
 Edit `index.html`, `about.html`, `manifesto.html`, or `publications.html` for content. The original layout utilities are in `styles.css`, interactions are in `main.js`, and the chosen type and spacing are in `typography.css`.
 
-The main typography is Libre Baskerville, with Source Sans 3 for navigation and publication metadata. On the aging essay, `.essay-lede` preserves the original Instrument Serif italic opening statement. `.discovery-regimes` preserves Instrument Serif titles/taglines and Inter labels/descriptions for Aim, Sweep, and Saturate. These scoped exceptions also preserve their original type sizes, weights, leading, and tracking.
+The original typography is restored: Inter for body text and navigation, and Instrument Serif for secondary headings, the wordmark, and quotations. Libre Baskerville is reserved for large page titles such as “On scaling for aging.” The Publications page uses its small original label as its accessible heading; the “32 papers.” headline has been removed. Original type sizes, weights, leading, and tracking are retained apart from large page titles and small photo credits. Spacing and accessibility refinements remain in `typography.css`.
 
 Fonts are served from `fonts/` through `font-faces.css`. The associated SIL Open Font License texts are included there. The website does not call Google Fonts at runtime.
 
