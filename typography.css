@@ -1,0 +1,318 @@
+/* Selected C typography, with original accents on the aging essay. */
+:root {
+  --heading-font: "Libre Baskerville", Georgia, serif;
+  --body-font: "Libre Baskerville", Georgia, serif;
+  --ui-font: "Source Sans 3", Arial, sans-serif;
+  --heading-weight: 400;
+  --heading-tracking: -0.01em;
+  --heading-leading: 1.15;
+  --heading-maximum: 3.5rem;
+  --body-mobile: 1rem;
+  --body-desktop: 1.03125rem;
+  --body-leading: 1.75;
+  --ink-muted: 0 0% 42%;
+}
+
+html,
+body {
+  font-family: var(--body-font);
+  font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: var(--heading-font);
+  font-optical-sizing: auto;
+}
+
+.eyebrow,
+.site-header nav > ul,
+main a.border,
+button,
+.arrow-link,
+.pub-filter,
+.pub-authors,
+main article p.text-sm,
+footer ul,
+footer p,
+.mobile-menu > div > div:last-child {
+  font-family: var(--ui-font);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, var(--heading-maximum));
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+h2 {
+  font-size: clamp(1.875rem, 1.5rem + 1vw, 2.25rem);
+  font-weight: var(--heading-weight);
+  line-height: 1.2;
+  letter-spacing: var(--heading-tracking);
+}
+
+h3 {
+  font-weight: var(--heading-weight);
+  line-height: 1.35;
+  letter-spacing: var(--heading-tracking);
+}
+
+p {
+  font-size: var(--body-mobile);
+  line-height: var(--body-leading);
+}
+
+.page-manifesto main ul[style*="font-size"] {
+  font-size: var(--body-mobile) !important;
+  line-height: var(--body-leading) !important;
+}
+
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.eyebrow:empty {
+  display: none;
+}
+
+.site-header .font-serif,
+.mobile-menu > div > div:first-child .font-serif {
+  font-size: 1.25rem;
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+}
+
+.site-header nav > ul a {
+  letter-spacing: 0;
+}
+
+.mobile-menu nav .font-serif {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  line-height: 1.3;
+}
+
+/* Keep paragraphs readable, including citations and multi-line text links. */
+main p .editorial-link {
+  display: inline;
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--ink) / 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+main p .editorial-link::after {
+  content: none;
+}
+
+main p .editorial-link:hover {
+  text-decoration-color: currentColor;
+}
+
+main article h3.text-xl {
+  font-size: 1.1875rem;
+  font-weight: var(--heading-weight);
+  line-height: 1.4;
+}
+
+.pub-authors {
+  line-height: 1.6;
+}
+
+.cover-card .font-serif {
+  font-size: 1.1875rem;
+  font-weight: var(--heading-weight);
+  line-height: 1.4;
+  letter-spacing: var(--heading-tracking);
+}
+
+/* Photo credits use the same small-text rhythm as publication metadata. */
+main div[style*="text-align:right"] {
+  padding-top: 0.625rem !important;
+  font-family: var(--ui-font);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: hsl(var(--ink-muted));
+}
+
+main div[style*="text-align:right"] a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Tighten vertical space without changing the grids or shared button spacing. */
+.site-header {
+  padding-block: 1.25rem;
+}
+
+main > section:first-child {
+  padding-top: 7rem;
+}
+
+main > section:first-child h1 {
+  margin-bottom: 1.5rem;
+}
+
+main > section:first-child .eyebrow {
+  margin-bottom: 1.25rem;
+}
+
+.section-padding {
+  padding-block: 3.5rem;
+}
+
+footer > .container-editorial {
+  padding-block: 3rem;
+}
+
+footer .font-serif {
+  font-size: 1.375rem;
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+}
+
+footer .mt-16 {
+  margin-top: 2.5rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid hsl(var(--link));
+  outline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: var(--body-desktop);
+  }
+
+  .page-manifesto main ul[style*="font-size"] {
+    font-size: var(--body-desktop) !important;
+  }
+
+  .site-header {
+    padding-block: 1.5rem;
+  }
+
+  main > section:first-child {
+    padding-top: 8.5rem;
+  }
+
+  .page-index main > section:first-child {
+    padding-bottom: 4.5rem;
+  }
+
+  .section-padding {
+    padding-block: 5.5rem;
+  }
+
+  main > section.py-16.md\:py-24 {
+    padding-block: 4.5rem;
+  }
+
+  main article h3.text-xl {
+    font-size: 1.375rem;
+  }
+
+  .cover-card .font-serif {
+    font-size: 1.25rem;
+  }
+
+  /* The section heading belongs to the existing four-column grid area. */
+  .page-about #press > .container-editorial > .reveal:first-child,
+  .page-about #media > .container-editorial > .reveal:first-child {
+    grid-column: span 4 / span 4;
+  }
+
+  footer > .container-editorial {
+    padding-block: 3.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal.is-armed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+
+  .site-header,
+  .mobile-menu,
+  .cover-img,
+  .arrow-link svg,
+  .editorial-link::after {
+    transition: none;
+  }
+}
+
+/* Preserve the original type in the two essay passages selected by Felix. */
+.essay-lede {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.625;
+  letter-spacing: normal;
+}
+
+.discovery-regimes h3 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.discovery-regimes .font-serif {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: normal;
+}
+
+.discovery-regimes .eyebrow {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.discovery-regimes p.text-sm {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+@media (min-width: 768px) {
+  .essay-lede,
+  .discovery-regimes h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .discovery-regimes .eyebrow {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
