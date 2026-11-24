@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Felix Wong | On scaling for aging</title>
+<meta name="description" content="Felix Wong is co-founder and CEO of Integrated Bio, formerly a PI at MIT. Scaling biological data generation to solve aging.">
+<meta name="author" content="Felix Wong" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Felix Wong | On Scaling for Aging">
+<meta property="og:description" content="Felix Wong is co-founder and CEO of Integrated Bio, formerly a PI at MIT. Scaling biological data generation to solve aging.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Felix Wong">
+<meta property="og:url" content="https://www.felixjwong.com/manifesto.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.felixjwong.com/manifesto.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body><div class="min-h-dvh flex flex-col bg-background">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="site-header" id="site-header">
+  <div class="container-editorial px-6 md:px-12 lg:px-20">
+    <nav class="flex items-center justify-between">
+      <a href="index.html" class="font-serif text-xl md:text-2xl text-ink transition-opacity duration-300 hover:opacity-70">Felix Wong</a>
+      <ul class="hidden md:flex items-center gap-8 lg:gap-12"><li><a href="manifesto.html" class="editorial-link text-sm font-medium tracking-wide text-ink transition-colors duration-300 hover:text-ink">On Solving Aging</a></li><li><a href="publications.html" class="editorial-link text-sm font-medium tracking-wide text-ink-light transition-colors duration-300 hover:text-ink">Publications</a></li><li><a href="about.html" class="editorial-link text-sm font-medium tracking-wide text-ink-light transition-colors duration-300 hover:text-ink">About</a></li></ul>
+      <button id="menu-open" class="md:hidden p-2 -mr-2 text-ink transition-opacity duration-300 hover:opacity-70" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true">
+  <div class="flex flex-col h-full px-6 py-6">
+    <div class="flex items-center justify-between">
+      <a href="index.html" class="font-serif text-xl text-ink">Felix Wong</a>
+      <button id="menu-close" class="p-2 -mr-2 text-ink transition-opacity duration-300 hover:opacity-70" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col justify-center">
+      <ul class="space-y-8"><li><a href="manifesto.html" class="font-serif text-4xl text-ink transition-colors duration-300 hover:text-ink">On Solving Aging</a></li><li><a href="publications.html" class="font-serif text-4xl text-ink-light transition-colors duration-300 hover:text-ink">Publications</a></li><li><a href="about.html" class="font-serif text-4xl text-ink-light transition-colors duration-300 hover:text-ink">About</a></li></ul>
+    </nav>
+    <div class="pt-8 border-t border-divider">
+      <div class="flex gap-6">
+        <a href="https://scholar.google.com/citations?hl=en&user=tXD1nAcAAAAJ" target="_blank" rel="noopener noreferrer" class="text-sm text-ink-muted transition-colors duration-300 hover:text-ink">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/felixjwong/" target="_blank" rel="noopener noreferrer" class="text-sm text-ink-muted transition-colors duration-300 hover:text-ink">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div><main id="main-content" class="flex-1">
+<section class="pt-32 md:pt-40 pb-12 px-6 md:px-12 lg:px-20">
+  <div class="container-editorial">
+    <div class="reveal">
+      <p class="eyebrow mb-6">On Solving Aging</p>
+      <h1 class="text-ink mb-8 max-w-4xl">On scaling for aging</h1>
+    </div>
+    <div class="reveal" style="transition-delay:150ms">
+      <p class="font-serif text-2xl md:text-3xl italic text-ink leading-relaxed max-w-3xl border-t border-divider pt-8">
+        Aging is the upstream cause of nearly everything that kills us. It is also a complex learning problem, one that should yield to scale.
+      </p>
+      <p class="mt-6 text-sm text-ink-muted">Felix Wong · Redwood City, 2026</p>
+    </div>
+  </div>
+</section>
+
+<section class="pb-8 px-6 md:px-12 lg:px-20">
+  <div class="container-editorial">
+    <div class="max-w-3xl">
+      <div class="reveal">
+        <p>Why does everyone have to die? I've been asking this since I was six—the year my grandpa died—and I
+        haven't heard a real answer. The most common non-response is "entropy", a law of closed systems.
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">Human mortality has long been described by Gompertz's law, which states that the risk of
+        death rises exponentially with age in adulthood (doubling approximately every 7-8 years in humans). This
+        statistical regularity reflects the specific evolutionary pressures that shaped our cellular repair and
+        rejuvenation capacity. However, Gompertz's law is not a physical constraint.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">In fact, multiple species have evolved sufficient repair and anti-aging mechanisms to evade
+        the typical Gompertzian decline. For instance, certain turtles and tortoises can live for many decades with
+        little increase in mortality risk, and the ocean quahog clam and Greenland shark can survive for centuries
+        while maintaining function. Notably, the naked mole-rat, a rodent roughly the size of a mouse, shows no rise
+        in mortality hazard even at 25-fold beyond reproductive maturity, effectively defying the aging curve that
+        governs other mammals. The independent evolution of "negligible senescence" across such diverse taxa strongly
+        suggests that aging is not an inescapable phenomenon, but rather a complex phenotype that can be modulated.
+        Decelerating aging is an engineering problem that biological systems have solved multiple times in different
+        ways.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">Humans have evolved under limited selective pressure to extend lifespan beyond the
+        reproductive and child-rearing years. The absence of strong evolutionary optimization for extreme longevity
+        implies that we are not at the hard biological limit of lifespan. This suggests that there may be
+        considerable "low-hanging fruit" for biomedical interventions to improve maintenance and repair mechanisms
+        and ultimately increase healthy lifespan. Indeed, short-term pharmacological interventions have been observed
+        to alter aging in mice by targeting conserved pathways (e.g. IIS/mTOR, sirtuins, AMPK). These interventions
+        show that treating aging as a modifiable condition is scientifically tractable.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6"><b>My hypothesis is that the obstacle to modifying aging has been search.</b> Aging is
+        complex, slow to read out, and importantly, we don't know where to look. Many failures in aging drug
+        discovery haven't been failures of biology; rather, they've been failures of <i>prior</i>. We all-too-often
+        impose a strong belief about mechanism onto a system whose mechanisms we cannot yet understand, and we
+        all-too-often are confidently wrong.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">Every discovery strategy is a choice about how strong a prior to impose. Put another way,
+        there are three regimes, and one way to view them is as a continuum indexed by the ratio of what we know to
+        what we don't know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 md:py-16 px-6 md:px-12 lg:px-20 bg-cream-dark">
+  <div class="container-editorial">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-10">
+      <div class="reveal">
+        <div class="border-t border-ink pt-6">
+          <p class="eyebrow mb-3">01 · Strong prior</p>
+          <div class="text-link mb-4"><svg class="regime-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="32" r="3.5"/><path d="M15 30 L46 20"/><path d="M15 34 L46 44"/><circle cx="48" cy="32" r="9"/><circle cx="48" cy="32" r="4"/><circle cx="48" cy="32" r="1.1" fill="currentColor"/><circle cx="30" cy="10" r="1.4"/><circle cx="30" cy="54" r="1.4"/><circle cx="16" cy="12" r="1.4"/><circle cx="16" cy="52" r="1.4"/></svg></div><h3 class="text-ink mb-3">Aim</h3>
+          <p class="font-serif text-lg italic text-ink-light mb-4">Start from a mechanism and interrogate it deeply.</p>
+          <p class="text-sm">E.g., mTOR, cellular senescence, the DNA-damage response; rapamycin came out of this
+          approach. Buys mechanistic depth and precisely targeted interventions, but pays for it in scope: you can
+          only find what you already suspected.</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:100ms">
+        <div class="border-t border-ink pt-6">
+          <p class="eyebrow mb-3">02 · Weak prior</p>
+          <div class="text-link mb-4"><svg class="regime-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="32" r="3.5"/><path d="M13 30 L52 8"/><path d="M13 34 L52 56"/><path d="M13.5 32 L52 32" stroke-dasharray="3 4"/><path d="M44 14 A22 22 0 0 1 44 50" stroke-dasharray="2 5"/><circle cx="34" cy="18" r="2.6"/><circle cx="38" cy="32" r="2.6"/><circle cx="34" cy="46" r="2.6"/><circle cx="24" cy="26" r="1.4"/><circle cx="24" cy="38" r="1.4"/></svg></div><h3 class="text-ink mb-3">Sweep</h3>
+          <p class="font-serif text-lg italic text-ink-light mb-4">Test many interventions in parallel, under one standard.</p>
+          <p class="text-sm">The NIA Interventions Testing Program is a good example. Buys freedom from tunnel
+          vision, but pays in cost and in false positives that require investment to understand.</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:200ms">
+        <div class="border-t border-ink pt-6">
+          <p class="eyebrow mb-3">03 · No prior</p>
+          <div class="text-link mb-4"><svg class="regime-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="8"/><path d="M32 12 L32 18"/><path d="M32 46 L32 52"/><path d="M12 32 L18 32"/><path d="M46 32 L52 32"/><path d="M17.9 17.9 L22.2 22.2"/><path d="M41.8 41.8 L46.1 46.1"/><path d="M46.1 17.9 L41.8 22.2"/><path d="M22.2 41.8 L17.9 46.1"/><circle cx="10" cy="10" r="1.6" fill="currentColor"/><circle cx="32" cy="6" r="1.6" fill="currentColor"/><circle cx="54" cy="10" r="1.6" fill="currentColor"/><circle cx="6" cy="32" r="1.6" fill="currentColor"/><circle cx="58" cy="32" r="1.6" fill="currentColor"/><circle cx="10" cy="54" r="1.6" fill="currentColor"/><circle cx="32" cy="58" r="1.6" fill="currentColor"/><circle cx="54" cy="54" r="1.6" fill="currentColor"/></svg></div><h3 class="text-ink mb-3">Saturate</h3>
+          <p class="font-serif text-lg italic text-ink-light mb-4">Let the data decide what works.</p>
+          <p class="text-sm">Ultra-high-content phenotypic screens across millions of perturbations in aged cells and
+          organoids, read out by learned classifiers answering a deceptively simple question: does it look younger?
+          Buys novel mechanisms, but pays in mechanistic interpretability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 md:py-16 px-6 md:px-12 lg:px-20">
+  <div class="container-editorial">
+    <div class="max-w-3xl">
+      <div class="reveal">
+        <p>These strategies are complementary, and any serious program should run all three. In my view, the most
+        important approach in our time is <u><b>saturate</b></u>: in this regime, every additional well-designed perturbation
+        sharpens our hypotheses, densifies the data supporting them, and improves the next round of hypothesis
+        generation. The other two strategies are inherently limited by our priors. The best approach, then, is to shift
+        weight rightward to saturate as fast as the data allow, and to use the leftward regimes as instruments for
+        interpreting (in the usual, mechanistic biology sense) what the right-hand one finds.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">Yet, it's not just about scale; it's also about the quality of the data. The best data to
+        enable the saturate strategy share four properties: they are perturbational, clean, high-content, and
+        anchored.</p>
+        <ul class="mt-4 space-y-3" style="list-style:disc;padding-left:1.25rem;color:hsl(var(--ink-light));font-size:1.125rem;line-height:1.625">
+          <li>They are <u><b>perturbational</b></u> rather than observational: this is because aging remains a
+          causal challenge, and correlations drawn from cross-sectional cohorts cannot address it.</li>
+          <li>They are <u><b>clean</b></u>, generated with tools such as optogenetics that switch aging-associated
+          pathways on and off with temporal precision, rather than inferred through chemical insult.</li>
+          <li>They are <u><b>high-content</b></u>: for instance, an image of a cell carries orders of magnitude more
+          information about its state than any single endpoint.</li>
+          <li>And they are <u><b>anchored</b></u>, or tied back to human longitudinal reality, so that the model is
+          learning about us and not about a well plate or imaging setup.</li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">These high-quality data should feed a flywheel (as they always do). Here, the flywheel is
+        the closed loop of scientific understanding: models that propose hypotheses, a high-throughput platform that
+        tests them against living systems, and a rigorous path by which experimental truth—including negative
+        results—returns as signal. Building this closed loop is the fundamental challenge, and programs and
+        partnerships are evidence of it working to create value.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6"><b>Here's my main bet: if aging is modifiable, if it is reversible, and if it is measurable
+        as a phenotype, then it is <u>learnable</u>.</b> And if aging is learnable, then generating the right kinds of
+        biological data at sufficient scale, inside a closed loop that refines hypothesis generation, will converge
+        to the most fundamental insights about aging biology. Such a discovery process would enable us to intervene
+        against aging itself, rather than only against age-associated diseases.</p>
+      </div>
+
+      <div class="reveal">
+        <p class="mt-6">The current state of aging research is reminiscent of where oncology was less than half a
+        century ago. Once a "death sentence," cancer is now increasingly manageable due to systematic scientific
+        progress. As our scientific understanding deepens, aging may be slowed and perhaps even reversed. The most
+        high-value question we can address now, then, is: how do we build the engine that addresses the biology of
+        aging at scale?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="bg-cream-dark border-t border-divider">
+  <div class="container-editorial px-6 md:px-12 lg:px-20 py-16 md:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+      <div class="md:col-span-4">
+        <a href="index.html" class="font-serif text-2xl text-ink transition-opacity duration-300 hover:opacity-70">Felix Wong</a>
+        <p class="mt-4 text-sm text-ink-muted max-w-xs">Co-founder and CEO of Integrated Bio. Scaling biological data generation to solve aging.</p>
+      </div>
+      <div class="md:col-span-3 md:col-start-6">
+        <h4 class="eyebrow mb-4">Navigation</h4>
+        <ul class="space-y-3"><li><a href="manifesto.html" class="text-sm text-ink-light transition-colors duration-300 hover:text-link">On Solving Aging</a></li><li><a href="publications.html" class="text-sm text-ink-light transition-colors duration-300 hover:text-link">Publications</a></li><li><a href="about.html" class="text-sm text-ink-light transition-colors duration-300 hover:text-link">About</a></li></ul>
+      </div>
+      <div class="md:col-span-3">
+        <h4 class="eyebrow mb-4">Connect</h4>
+        <ul class="space-y-3"><li><a href="https://scholar.google.com/citations?hl=en&user=tXD1nAcAAAAJ" target="_blank" rel="noopener noreferrer" class="text-sm text-ink-light transition-colors duration-300 hover:text-link">Google Scholar</a></li><li><a href="https://www.linkedin.com/in/felixjwong/" target="_blank" rel="noopener noreferrer" class="text-sm text-ink-light transition-colors duration-300 hover:text-link">LinkedIn</a></li></ul>
+      </div>
+    </div>
+    <div class="mt-16 pt-8 border-t border-divider flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <p class="text-xs text-ink-muted">© 2026 Felix Wong. Last updated 8/9/26.</p>
+      <div class="flex items-center gap-6">
+        <p class="text-xs text-ink-muted">Redwood City, CA</p>
+      </div>
+    </div>
+  </div>
+</footer></div><script src="main.js"></script></body></html>

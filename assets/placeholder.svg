@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Image placeholder">
+  <rect width="800" height="1000" fill="#efece4"/>
+  <rect x="1" y="1" width="798" height="998" fill="none" stroke="#d8d2c6" stroke-width="2"/>
+  <g fill="none" stroke="#b9b2a3" stroke-width="3">
+    <circle cx="300" cy="380" r="70"/>
+    <path d="M140 720 L330 470 L470 640 L560 540 L680 720 Z"/>
+  </g>
+  <text x="400" y="850" font-family="Inter, system-ui, sans-serif" font-size="30" fill="#8a8271" text-anchor="middle">Image not included in export</text>
+  <text x="400" y="895" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#a89f8d" text-anchor="middle">drop the original file into /assets</text>
+</svg>
