@@ -10,7 +10,8 @@ h4,
 h5,
 h6,
 .eyebrow:is(h1, h2, h3, h4, h5, h6),
-.font-serif:not(.italic) {
+.font-serif:not(.italic),
+.profile-title {
   font-family: "Libre Baskerville", Georgia, serif;
   font-optical-sizing: auto;
   font-weight: 400;
